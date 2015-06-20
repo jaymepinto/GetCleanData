@@ -1,6 +1,7 @@
 This code book describes the data and variables as well as the transformations performed to clean up the data.
 
 1) THE DATA AND VARIABLES
+
 The dataset was obtained from experiments that have been carried out with a group of 30 volunteers within an
 age bracket of 19-48 years and represents data collected from accelerometers installed in their smartphone, see [1].
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing
@@ -34,6 +35,7 @@ Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly S
 International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 2) CLEANING UP THE DATA
+
 The data collected from the volunteers was split in two similar groups of files, one corresponding to test and other
 to training data. We merged all files and created one dataset containing all observations (named TestTrain).
 
