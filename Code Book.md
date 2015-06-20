@@ -31,7 +31,7 @@ International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz,
 2) CLEANING UP THE DATA
 
 Since the data collected from the volunteers was split in two similar groups of files, one corresponding to test and other
-to training data, we merged all files and created one dataset containing all observations (named TestTrain).
+to training data, we initially merged all files and created one dataset containing all observations (named TestTrain). This was the base dataset to subsequent analysis, which generated the table TestTrainFinal and the file tidyData.txt.
 
 In the first step, starting with the test group, we merged all information collected from those subjects (12 tables).
 It was only necessary to merge tables "side by side", since each row in any of the 12 tables corresponded to
@@ -39,8 +39,7 @@ a set of measures from an specific volunteer. The same procedure was applied to 
 Merging these two tables (one on top of the other) we obtained the TestTrain table (one table containing all observations, with dimension 10299 x 1715).
 
 As a second step, we selected from the TestTrain table only the columns (measurements) which contained
-mean and standard deviation statistics. That was done by selecting the words mean and std in the row names of the
-measurements. The result was the table TestTrainFinal (with dimension 10299 x 81).
+mean and standard deviation statistics. That was done by selecting the measurements which had the words mean and std in their row names. The result was the table TestTrainFinal (with dimension 10299 x 81).
 
 The next step was to use descriptive activity names to name the six activities in the data set (WALKING, WALKING_UPSTAIRS,
 WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING) and to label the data set with descriptive variable names. These two tasks
