@@ -13,8 +13,8 @@ For each record it is provided:
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration (768 columns).
 - Triaxial Angular velocity from the gyroscope (384 columns). 
 - A 561-feature vector with time and frequency domain variables (561 columns). 
-- Its activity label (1 columns comprising 6 different coded activities). 
-- An identifier of the subject who carried out the experiment (1 columns comprising 30 different subjects).
+- Its activity label (1 column comprising 6 different coded activities). 
+- An identifier of the subject who carried out the experiment (1 column comprising 30 different subjects).
 
 Since 70% of the volunteers was selected for generating the training data and 30% the test data, the whole data obtained was split in two parts (train and test data).
 
