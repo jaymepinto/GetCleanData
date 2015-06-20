@@ -19,7 +19,7 @@ As a final step, test and train tables were merged. Differently from steps 1.3 a
 - 1.6 Merging the two tables: we created the TestTrain table, with 10299 obs of 1715 variables
 
 
-- QUESTION 2: Extracts only the measurements on the mean and standard deviation for each measurement.
+QUESTION 2: Extracts only the measurements on the mean and standard deviation for each measurement.
  
 Five steps were necessary to conclude Question 2. The result is the TestTrainFinal table.
 - 2.1 Reading the table features.txt: this table contains 561 column names used in TestTrain table
@@ -28,18 +28,18 @@ Five steps were necessary to conclude Question 2. The result is the TestTrainFin
 - 2.4 Selecting the columns of the complete dataset TestTrain which the words mean or std appear: using the vector of indices obtained in Step 2.3 we selected 79 columns from TestTrain table.
 - 2.5 Adding two more columns to the dataset: we added activity and subject (the columns selected in previous step did not include activity and subject, both added in this step). The obtained table was named TestTrainFinal and has 10299 obs of 81 variables.
 
-- QUESTION 3: Uses descriptive activity names to name the activities in the data set
+QUESTION 3: Uses descriptive activity names to name the activities in the data set
 
 One step was necessary to conclude Question 3. The result is the TestTrainFinal table (now with descriptive activity names).
 - 3.1 Reading the activity labels and describing the activities in the dataset TestTrainFinal: we read the file activity_labels.txt and used the descriptive activity names found to name the activities in the data set TestTrainFinal, i.e., replaced their codes for the respective names.
 
-- QUESTION 4: Appropriately labels the data set with descriptive variable names
+QUESTION 4: Appropriately labels the data set with descriptive variable names
 
 One step was necessary to conclude Question 4. The result is the TestTrainFinal table (now all columns are labeled).
 - 4.1 Labeling the columns of the dataset TestTrainFinal: we labeled the 79 columns extracted in step 2.4 (up to this point
 they had no label). We considered the elements extracted in step 2.2.
 
-- QUESTION 5: From the data set in QUESTION 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+QUESTION 5: From the data set in QUESTION 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Two steps were necessary to conclude Question 5. The result is a file named tidyData.txt.
 - 5.1 Aggregating the lines of table TestTrainFinal (by subject and activity) and calculating the mean for the remaining 79 columns of the table. The result was stored in table AvgData
