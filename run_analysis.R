@@ -50,7 +50,7 @@ TestTrain <- rbind(test, train) # This is the answer to Question 1
 # 2.1 Reading the table features
 features <- read.table("./data/UCI HAR Dataset/features.txt", header = FALSE, sep = "")
 
-# 2.2 Finding the rows where the words mean or std appear (we are not considering columns where the word Mean appears)
+# 2.2 Finding the columns where the words mean or std appear (we are not considering columns where the word Mean appears)
 features$order <- seq(along=features$V1) # Creates the order column
 logic <- grepl('mean', features$V2) | grepl('std', features$V2)
 ind <- as.vector(features[logic,3])
@@ -58,7 +58,7 @@ ind <- as.vector(features[logic,3])
 # 2.3 Creating a vector of indices for selecting columns at the complete dataset TestTrain
 indfinal <- ind + 2 + 9*128
 
-# 2.4 Selecting the columns of the complete dataset TestTrain which the words mean or std appear
+# 2.4 Selecting the columns of the complete dataset TestTrain which the words mean or std appear (79 columns)
 TestTrainFinal <- TestTrain[, indfinal]
 
 # 2.5 Adding two more columns to the dataset: activity and subject
