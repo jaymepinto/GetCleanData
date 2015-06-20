@@ -21,13 +21,12 @@ As a final step, test and train tables are merged. Differently from steps 1.3 an
 # QUESTION 2: Extracts only the measurements on the mean and standard deviation for each measurement.
 Five steps were necessary to conclude Question 2. The result is the TestTrainFinal table.
 # 2.1 Reading the table features.txt: this table contains 561 column names used in TestTrain table
-# 2.2 Finding feature elements where the words mean or std appear (we are not considering elements where the word Mean appears as part of the name
-, such as angle(tBodyAccJerkMean) or gravityMean)
+# 2.2 Finding feature elements where the words mean or std appear (we are not considering elements where the word Mean appears as part of the name, such as angle(tBodyAccJerkMean) or gravityMean)
 # 2.3 Creating a vector of indices for selecting columns at the complete dataset TestTrain: from the elements selected in previous steps,
 we create a vector of indices to be used to extract columns in TrainTest table whose names contain mean or std.
-# 2.4 Selecting the columns of the complete dataset TestTrain which the words mean or std appear
+# 2.4 Selecting the columns of the complete dataset TestTrain which the words mean or std appear (79 columns).
 # 2.5 Adding two more columns to the dataset: activity and subject (columns selected in previous step did not include
-activity and subject, both added in this step). The table obtained is named TestTrainFinal.
+activity and subject, both added in this step). The table obtained is named TestTrainFinal with 10299 obs of 81 variables.
 
 # QUESTION 3: Uses descriptive activity names to name the activities in the data set
 One step was necessary to conclude Question 3. The result is the TestTrainFinal table (now with descriptive activity names).
